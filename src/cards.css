@@ -9,14 +9,18 @@ html {
 .icon {color: #BCD2DA;}
 
 .card {
-    /* display, flex-direction */
+    display:flex;
+    flex-direction: column;                       /* display, flex-direction */
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
 }
 
 .card__description {
-    /* display, flex-direction, justify-content, align-items */
+    display:flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;    /*  display, flex-direction, justify-content, align-items */
     padding: 15px 0;
 }
 
@@ -40,18 +44,20 @@ html {
 }
 
 .cardGroup {
-    /* display */
-  
+    display: flex;               /* display */
     border: 1px solid #CAD0D2;
+    flex-wrap: wrap;
     border-radius: 4px;
-    overflow: hidden;
+    overflow: hidden;   
+    max-width: 710px;
   }
   
     .cardGroup__card {
-      /* flex-grow, flex-shrink, flex-basis */
-  
       border: none;
       border-radius: 0;
+      flex-grow: 1;       /*  flex-grow, flex-shrink, flex-basis */
+      flex-shrink: 1;
+      flex-basis: 30px;
     }
   
     .cardGroup__card {
@@ -59,5 +65,15 @@ html {
     }
   
     .cardGroup__cardDescription {
-      /* flex-grow, flex-shrink, flex-basis */
+      flex-grow: 1;           /*  flex-grow, flex-shrink, flex-basis */
+      flex-shrink: 1;
+      flex-basis: auto;
+    }
+
+    @media (max-width:480px) {
+      .cardGroup {
+        flex-direction: column;
+        max-width: 320px;
+        height: 420px;
+      }
     }
