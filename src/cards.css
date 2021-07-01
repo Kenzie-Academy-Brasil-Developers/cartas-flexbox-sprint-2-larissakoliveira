@@ -55,9 +55,7 @@ html {
     .cardGroup__card {
       border: none;
       border-radius: 0;
-      flex-grow: 1;       /*  flex-grow, flex-shrink, flex-basis */
-      flex-shrink: 1;
-      flex-basis: 30px;
+      flex: 1 1 30px;       /*  flex-grow, flex-shrink, flex-basis */
     }
   
     .cardGroup__card {
@@ -65,9 +63,7 @@ html {
     }
   
     .cardGroup__cardDescription {
-      flex-grow: 1;           /*  flex-grow, flex-shrink, flex-basis */
-      flex-shrink: 1;
-      flex-basis: auto;
+      flex: 1 1 auto;       /*  flex-grow, flex-shrink, flex-basis */
     }
 
     @media (max-width:480px) {
