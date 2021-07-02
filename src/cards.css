@@ -6,6 +6,11 @@ html {
     background-color: #FFFFFF;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .icon {color: #BCD2DA;}
 
 .card {
